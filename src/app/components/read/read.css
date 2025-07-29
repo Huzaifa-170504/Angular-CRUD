@@ -1,0 +1,116 @@
+body {
+  background-color: #0d0d0d;
+  color: #00ffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main layout container */
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* Standard glowing title */
+header h1,
+.glow-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  color: #1a1a1a;
+}
+
+/* List of posts */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.post-item {
+  background-color: #141414;
+  border: 1px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  text-align: left;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  color: #e0fafa;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.btn-update {
+  background-color: #00ffff;
+  color: #0d0d0d;
+}
+
+.btn-update:hover {
+  background-color: #00ccff;
+  box-shadow: 0 0 15px #00ccff;
+}
+
+.btn-delete {
+  background-color: #ff4d4d;
+  color: #fff;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+
+.btn-delete:hover {
+  background-color: #e60000;
+  box-shadow: 0 0 15px #ff1a1a;
+}
+/* 🔙 Back button styling */
+.btn-back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #0d0d0d; /* dark background */
+  color: #00ffff; /* neon cyan text */
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #00ffff;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: 1px solid #00ffff;
+}
+
+.btn-back:hover {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  transform: scale(1.05);
+}

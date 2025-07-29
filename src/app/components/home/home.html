@@ -1,0 +1,13 @@
+<div class="container">
+  <header>
+    <h1 class="glow-title">Welcome to the CRUD App</h1>
+    <p class="subtitle">Manage your posts efficiently using Create, Read, Update, and Delete operations.</p>
+  </header>
+
+  <nav class="nav-links">
+    <a [routerLink]="['/create']" class="btn">➕ Create Post</a>
+    <a [routerLink]="['/read']" class="btn">📖 Read Posts</a>
+
+    <button (click)="logout()" class="btn logout-btn">🚪 Logout</button>
+  </nav>
+</div>

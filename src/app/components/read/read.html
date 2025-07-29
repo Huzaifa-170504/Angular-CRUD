@@ -1,0 +1,21 @@
+<div class="container">
+  <header>
+    <h1 class="glow-title">All Posts</h1>
+  </header>
+
+  <ul class="post-list">
+    <li *ngFor="let post of posts" class="post-item">
+      <h3 class="post-title">{{ post.title }}</h3>
+      <p class="post-content">{{ post.content }}</p>
+
+      <div class="action-buttons">
+        <a [routerLink]="['/update', post.id]" class="btn btn-update">✏️ Update</a>
+        <a [routerLink]="['/delete', post.id]" class="btn btn-delete">🗑️ Delete</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="back-btn-wrapper">
+    <button (click)="goBack()" class="btn btn-back">🔙 Back</button>
+  </div>
+</div>

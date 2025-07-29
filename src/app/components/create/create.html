@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="glow-title">Create Post</h1>
+
+  <form (ngSubmit)="createPost()" #postForm="ngForm" class="create-form">
+    <label for="title">Title:</label>
+    <input
+      type="text"
+      id="title"
+      name="title"
+      [(ngModel)]="post.title"
+      required
+      class="auth-input"
+    />
+
+    <label for="content">Content:</label>
+    <textarea
+      id="content"
+      name="content"
+      [(ngModel)]="post.content"
+      required
+      class="auth-input"
+      rows="5"
+      placeholder="Write your content here..."
+    ></textarea>
+
+    <button type="submit" class="auth-btn">Create</button>
+  </form>
+    <div class="back-btn-wrapper">
+    <button (click)="goBack()" class="btn btn-back">🔙 Back</button>
+    </div>
+</div>

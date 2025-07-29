@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('assets/images/background.jpg'); /* relative to src */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 40px 10px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 900px) {
+  .container {
+    padding: 30px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+}

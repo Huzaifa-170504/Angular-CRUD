@@ -1,0 +1,79 @@
+body {
+  background-color: #0d0d0d;
+  color: #00ffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffff;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0d0d0d;
+  background-color: #00ffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00ccff;
+  box-shadow: 0 0 15px #00ccff;
+}
+/* Positioning the logout button in the top-right */
+.logout-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #0d0d0d; /* dark background */
+  color: #00ffff; /* neon cyan text */
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #00ffff;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: 1px solid #00ffff;
+}
+
+.logout-btn:hover {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  transform: scale(1.05);
+}
+

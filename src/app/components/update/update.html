@@ -1,0 +1,37 @@
+<div class="container">
+  <h1 class="glow-title">Edit Post</h1>
+
+  <form [formGroup]="postForm" (ngSubmit)="onSubmit()" class="form-layout">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        id="title"
+        type="text"
+        class="auth-input"
+        formControlName="title"
+        required
+        placeholder="Enter post title"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content</label>
+      <textarea
+        id="content"
+        class="auth-input"
+        formControlName="content"
+        rows="4"
+        required
+        placeholder="Write your content here..."
+      ></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="auth-btn">Update</button>
+      <a routerLink="/read" class="cancel-btn">Cancel</a>
+    </div>
+  </form>
+</div>
+  <div class="back-btn-wrapper">
+    <button (click)="goBack()" class="btn btn-back">🔙 Back</button>
+  </div>
