@@ -82,7 +82,7 @@ src/
 
 > Add your deployed link here (GitHub Pages / Firebase / Netlify):
 
-**🔗 [Live Demo Here](https://your-username.github.io/Angular-CRUD/)**
+**🔗 [Live Demo Here](https://huzaifa-170504.github.io/Angular-CRUD/)**
 
 ---
 
