@@ -3,6 +3,8 @@
 
 This is a fully functional **CRUD (Create, Read, Update, Delete)** web application built using **Angular 20**. It allows users to create, edit, delete, and view records dynamically with modern responsive design and glowing neon theme.
 
+Note : Use [admin@gmail.com] as gmail
+Password : admin123
 ---
 
 ## 🔧 Technologies Used
